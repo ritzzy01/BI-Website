@@ -53,7 +53,7 @@ h1, h2, h3 {
     margin: 0;
 }
 .heading{
-    background: url('images/bg2.png');
+    background: images/bg2.png
 }
 /* Sticky Bar */
 .sticky-bar {
