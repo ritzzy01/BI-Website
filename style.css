@@ -1,377 +1,267 @@
 /* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     line-height: 1.6;
-    background-color: #fafafa;
-}
-/* Icon Styling */
-.top-bar .icon {
-    width: 16px; /* Adjust as needed */
-    height: 15px; /* Adjust as needed */
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-header {
-    background: linear-gradient(to right, #202c2a, #354a38);
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-header p {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #ddd;
-} 
-
-h1, h2, h3 {
-    margin: 0 0 15px;
-}
-
-/* Top Bar Styling */
-.top-bar {
-    height: 20px;
-    background-color: #f4a261;
+    background-color: #f4f4f4;
     color: #333;
-    font-size: 14px;
-    padding: 10px 5px;
-    text-align: center;
 }
 
-.top-bar p {
-    margin: 0;
-}
-.heading {
-    background: url('images/bg2.png') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the entire element */
-}
-
-/* Sticky Bar */
-.sticky-bar {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
-    /* z-index: 1000; */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-/* Flex Container */
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 
-/* Logo with Background Image */
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 15px 30px;
-    color: #fff;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    display: inline-block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+/* Top Bar */
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-.logo:hover {
-    transform: scale(1.05);
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
+.top-bar .container p {
     display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-links li {
-    margin: 0;
+.top-bar .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
-.nav-links a {
+/* Header (Sticky Bar) */
+.sticky-bar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.sticky-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-bar .logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.sticky-bar nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.sticky-bar nav ul li {
+    margin-right: 20px;
+}
+
+.sticky-bar nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
 }
 
-.nav-links a:hover {
-    color: #f4a261;
-}
-
-/* Main Header Styling */
-/* header {
-    background: linear-gradient(to right, #202c2a, #354a38);
-    color: #fff;
-    padding: 40px 0;
+/* Hero Section */
+.heading {
+    background-color: #333;
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.heading h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-header p {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #ddd;
-} */
-
-
-/* Section Styles */
-section {
-    padding: 50px 20px;
-    text-align: center;
-    border-top: 5px solid #f4a261;
+.heading p {
+    font-size: 20px;
 }
 
-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+/* Main Content */
+main {
+    padding: 30px 0;
 }
 
-section p {
-    font-size: 1.2rem;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-}
-
-/* Products Section */
 #products {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
+    background-color: white;
+    padding: 20px 0;
 }
 
 #products h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#products p {
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .product {
-    background: #fff;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-}
-
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .product p {
-    font-size: 1rem;
-    color: #666;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
-.product a {
+.learn-more {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
     text-decoration: none;
-    background-color: #f4a261;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-.product a:hover {
-    background-color: #e76f51;
+.learn-more:hover {
+    background-color: #0056b3;
 }
 
-/* Industries Section */
-#industries {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
+/* About Section */
+#about {
+    background-color: #f8f8f8;
+    padding: 40px 0;
     text-align: center;
 }
 
-#industries h2 {
-    font-size: 2.5rem;
-    color: #333;
+#about h2 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-#industries p {
-    font-size: 1.2rem;
-    color: #666;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
+#about p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.industries-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
+#about .about-image {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    border-radius: 8px;
 }
 
-.industry-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
-.industry-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
-.industry-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.industry-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Contact Form */
+/* Contact Section */
 #contact {
-    background-color: #ffffff;
-    padding: 50px 20px;
+    background-color: white;
+    padding: 40px 0;
     text-align: center;
-    border-top: 5px solid #f4a261;
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 #contact p {
-    font-size: 1.2rem;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-}
-/* Label Alignment */
-form label {
-    font-size: 1.1rem;
-    color: #333;
-    text-align: left;  /* Aligns label to the left */
-    display: block;    /* Makes the label a block element */
-    margin-bottom: 5px; /* Adds space below the label */
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-form input, form textarea, form button {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 form input, form textarea {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 form button:hover {
-    background-color: #f4a261;
+    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
     background-color: #333;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
 }
 
 footer p {
-    margin: 0;
-    font-size: 1rem;
+    font-size: 14px;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
-    .container {
+    .sticky-bar .container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .logo {
-        margin-bottom: 20px;
+    .product-grid {
+        grid-template-columns: 1fr;
     }
 
-    .nav-links {
-        justify-content: center;
-        margin-top: 15px;
+    #about .about-image {
+        max-width: 100%;
     }
 }
