@@ -52,9 +52,11 @@ h1, h2, h3 {
 .top-bar p {
     margin: 0;
 }
-.heading{
-    background: images/bg2.png
+.heading {
+    background: url('images/bg2.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
 }
+
 /* Sticky Bar */
 .sticky-bar {
     position: sticky;
