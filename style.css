@@ -55,13 +55,13 @@ h1, h2, h3 {
 .heading{
     background: url('images/bg2.png');
 }
-heading h1 {
+.heading h1 {
     font-size: 3rem;
     margin: 0;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-heading p {
+.heading p {
     margin: 10px 0;
     font-size: 1.2rem;
     color: #ddd;
