@@ -55,6 +55,7 @@ h1, h2, h3 {
 }
 .heading{
     background: url('images/bg2.png');
+    text-align: center;
 }
 .heading h1 {
 /*     font-size: 3rem; */
